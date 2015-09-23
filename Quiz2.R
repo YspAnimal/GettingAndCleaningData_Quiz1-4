@@ -27,3 +27,30 @@ nchar(readFile[10])
 nchar(readFile[20])
 nchar(readFile[30])
 nchar(readFile[100])
+
+
+install.packages("readr")
+library(readr)
+x <- read.fwf(
+  file=url("https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for"),
+  skip=4,
+  widths=c(12, 7,4, 9,4, 9,4, 9,4))
+
+cumsum(x[, 4])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
